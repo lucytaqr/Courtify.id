@@ -186,3 +186,19 @@ return [
     ])->toArray(),
 
 ];
+
+// 'providers' => [
+//     // ...
+//     Intervention\Image\ImageServiceProvider::class,
+// ],
+// 'aliases' => [
+//     // ...
+//     'Image' => Intervention\Image\Facades\Image::class,
+// ],
+// use Intervention\Image\Facades\Image;
+
+// $image = Image::make('keranjang.jpg')->resize(30, 20);
+
+// // Simpan foto yang sudah diresize
+// $image->save('keranjang.jpg');
+
