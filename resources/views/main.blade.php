@@ -46,8 +46,7 @@
         <div class="container-fluid">
             <div class="inner-header">
                 <div class="logo">
-                    <a href="./index.html"><img src="images/logo.jpg" alt=""></a>
-                    <a href="#">Courtify.id</a>
+                    <a href=""><img src="images/courtify.png" width="130"></a>
                 </div>
                 <div class="header-right">
                     <img src="img/icons/search.png" alt="" class="search-trigger">
@@ -58,17 +57,16 @@
                     </a>
                 </div>
                 <div class="user-access">
-                    <a href="#">Register</a>
-                    <a href="#" class="in">Sign in</a>
+                    <a href="#" style="text-decoration:none">Register</a>
+                    <a href="#" class="in" style="text-decoration:none">Sign in</a>
                 </div>
-                <nav class="main-menu mobile-menu">
+                <nav class="main-menu mobile-menu" >
                     <ul>
-                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a class="active" href="./index.html" style="text-decoration:none">Home</a></li>
 
                         </li>
-                        <li><a href="./product-page.html">Sewa Lapangan</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="./check-out.html">Blog</a></li>
+                        <li><a href="./product-page.html" style="text-decoration:none">Sewa Lapangan</a></li>
+                        <li><a href="./contact.html" style="text-decoration:none">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -383,7 +381,7 @@
     <!-- Lookbok Section End -->
 
     <!-- Logo Section Begin -->
-    <!-- <div class="logo-section spad">
+    <div class="logo-section spad">
         <div class="logo-items owl-carousel">
             <div class="logo-item">
                 <img src="img/logos/logo-1.png" alt="">
@@ -401,7 +399,7 @@
                 <img src="img/logos/logo-5.png" alt="">
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Logo Section End -->
 
 
