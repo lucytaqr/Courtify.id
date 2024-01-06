@@ -478,7 +478,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-box blue">
-              <i class="ri-discuss-line icon"></i>
+              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Futsal</h3>
               <p>Nikmati aksi cepat dan teknis di lapangan futsal kami yang nyaman. Sempurna untuk pertandingan antar teman atau latihan intens.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -487,7 +487,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-box orange">
-              <i class="ri-discuss-line icon"></i>
+              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Basket</h3>
               <p>Dapatkan kesempatan untuk mempertajam keterampilan bola basket Anda di lapangan kami yang luas. Sempurna untuk pertandingan seru atau latihan bersama tim.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -496,7 +496,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-box green">
-              <i class="ri-discuss-line icon"></i>
+              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Voli</h3>
               <p>Rasakan semangat kompetisi dan kerjasama di lapangan voli kami yang lapang. Cocok untuk pertandingan santai atau turnamen yang penuh semangat.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -505,7 +505,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-box red">
-              <i class="ri-discuss-line icon"></i>
+              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Badminton</h3>
               <p>Bermainlah dengan lincah dan fleksibel di lapangan badminton kami yang nyaman. Tersedia untuk pertandingan seru atau latihan individu.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -514,7 +514,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-box purple">
-              <i class="ri-discuss-line icon"></i>
+              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Golf</h3>
               <p>Rasakan keindahan alam dan ketegangan permainan golf di lapangan kami yang terawat dengan baik. Sempurna untuk putaran santai atau kompetisi serius.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -523,7 +523,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
             <div class="service-box pink">
-              <i class="ri-discuss-line icon"></i>
+              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Tennis</h3>
               <p>Hadapi lawan Anda dengan energi penuh di lapangan tenis kami yang terawat. Cocok untuk pertandingan ganda atau latihan pribadi.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -890,7 +890,7 @@
 
         <header class="section-header">
           <h2>Testimonials</h2>
-          <p>What they are saying about us</p>
+          <p>Apa yang mereka katakan tentang kita?</p>
         </header>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
@@ -902,28 +902,11 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
+                  Courtify sungguh luar biasa! Antarmuka yang intuitif membuat proses pemesanan lapangan olahraga begitu mudah dan cepat. Layanan pelanggan mereka juga luar biasa, selalu responsif dan membantu.                </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
+                  <h3>Amanda Putri</h3>
+                  <h4>Atlet Badminton</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -934,12 +917,11 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
+                  Pengalaman menyewa lapangan olahraga melalui Courtify luar biasa. Saya sangat terkesan dengan kualitas lapangan yang mereka tawarkan dan fleksibilitas dalam jadwal. Sungguh rekomendasi tinggi!                </p>
                 <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Budi Santoso</h3>
+                  <h4>Pemilik Klub Futsal</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -950,12 +932,11 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
+                  Courtify benar-benar mempermudah hidup olahraga saya. Dari futsal hingga tenis, semua lapangan yang saya sewa selalu dalam kondisi prima. Proses pembayaran yang lancar membuatnya jadi pilihan utama saya.                </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
+                  <h3>Rizky Pratama</h3>
+                  <h4>Atlet Basket</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -966,12 +947,26 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
+                  Saya sangat puas dengan pelayanan Courtify. Mereka memiliki pilihan lapangan yang beragam untuk berbagai olahraga, dan sistem reservasi mereka sangat efisien. Saya sering merekomendasikan kepada teman-teman saya!                </p>
                 <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Siti Nurhaliza</h3>
+                  <h4>Pengguna Umum</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Courtify memberikan pengalaman yang tiada tara dalam menyewa lapangan olahraga. Dari booking yang mudah hingga fasilitas lapangan yang prima, semuanya sesuai dengan harapan. Saya tidak akan mencari platform lain lagi!                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Putri Lestari</h3>
+                  <h4>Pelatih Badminton</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -1157,7 +1152,7 @@
 
         <header class="section-header">
           <h2>Contact</h2>
-          <p>Contact Us</p>
+          <p>Contact Kami</p>
         </header>
 
         <div class="row gy-4">
@@ -1168,29 +1163,29 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street,<br>New York, NY 535022</p>
+                  <h3>Alamat</h3>
+                  <p>JL. Wahid Hasyim No. 10D,<br>Jakarta Pusat, Indonesia 10340</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                  <h3>Telephone</h3>
+                  <p>+62878-8552-5300</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com<br>contact@example.com</p>
+                  <h3>Email Kami</h3>
+                  <p>Courtify@gmail.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
-                  <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
-                  <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                  <i class="bi bi-instagram"></i>
+                  <h3>Instagram Kami</h3>
+                  <p>Courtify.id</p>
                 </div>
               </div>
             </div>
@@ -1220,9 +1215,9 @@
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Pesanmu sudah terkirim. Terima Kasih!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Kirim Pesan</button>
                 </div>
 
               </div>
@@ -1241,31 +1236,17 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-    {{-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 text-center">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> --}}
-
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
               <img src="assets/img/logo.png" alt="">
-              <span>FlexStart</span>
+              <span>Courtify</span>
             </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <h4>PT. Courtify Maju</h4>
+            <p>JL. Wahid Hasyim No. 10D Jakarta Pusat 10340 <br> DKI Jakarta, Indonesia</p>
+            <p>Hubungi Kami : +62878-8552-5300</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -1275,35 +1256,27 @@
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Perusahaan</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Tentang</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Kebijakan Privasi</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Syarat dan Ketentuan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Ekosistem</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Sewa Lapangan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
+            <h4>Hubungi Kami</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Kontak <br><br><br><br>
+              <strong>Phone:</strong> +62878-8552-5300<br>
+              <strong>Email:</strong> Courtify@gmail.com<br>
             </p>
 
           </div>
@@ -1314,14 +1287,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; Copyright <strong><span>Courtify</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
