@@ -29,3 +29,7 @@ Route::get('/shop',function () {
     return view('shopcatalog');
 });
 
+Route::get('/shopdetails',function () {
+    return view('shopdetails');
+});
+
