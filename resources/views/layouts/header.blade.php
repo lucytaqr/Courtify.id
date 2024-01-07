@@ -35,17 +35,17 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span>Courtify</span>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Sewa Lapangan</a></li>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          {{-- <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li> --}}
+          <li><a class="nav-link scrollto" href="/shop">Sewa Lapangan</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -92,7 +92,9 @@
           </li> -->
 
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Sign In</a></li>
+          <li><a class="bi bi-cart3" href="#contact"></a></li>
+          <li><a class="nav-link scrollto"> | </a></li>
+          <li><a class="nav-link scrollto" href="/login">Sign In</a></li>
           <li><a class="getstarted scrollto" href="#about">Sign Up</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

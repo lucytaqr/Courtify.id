@@ -46,7 +46,7 @@
                 Temukan lapangan olahraga impian Anda dengan mudah di sini! Dengan antarmuka yang sederhana dan sistem pemesanan yang cepat, Anda bisa menemukan lapangan yang tepat sesuai kebutuhan Anda.
             </p>
               <div class="text-center text-lg-start">
-                <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <a href="/learnmore" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Selengkapnya</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
