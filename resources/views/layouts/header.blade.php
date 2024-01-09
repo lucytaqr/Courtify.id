@@ -95,7 +95,7 @@
           <li><a class="bi bi-cart3" href="#contact"></a></li>
           <li><a class="nav-link scrollto"> | </a></li>
           <li><a class="nav-link scrollto" href="/login">Sign In</a></li>
-          <li><a class="getstarted scrollto" href="#about">Sign Up</a></li>
+          <li><a class="getstarted scrollto" href="/login">Sign Up</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
