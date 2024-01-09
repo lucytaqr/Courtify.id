@@ -18,7 +18,14 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+
 Route::get('/login', function () {
+
+Route::get('/learnmore',function () {
+    return view('learnmore');
+});
+
+Route::get('/login',function () {
     return view('login');
 })->name('login')->middleware(['guest']);
 
