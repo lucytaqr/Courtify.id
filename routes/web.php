@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SocialiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,13 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function (){
-    return view('welcome');
-}); 
-
-Route::get('/',function () {
+Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+
+Route::get('/login', function () {
 
 Route::get('/learnmore',function () {
     return view('learnmore');
@@ -27,17 +27,27 @@ Route::get('/learnmore',function () {
 
 Route::get('/login',function () {
     return view('login');
-});
+})->name('login')->middleware(['guest']);
 
-Route::get('/shop',function () {
+Route::get('/shop', function () {
     return view('shopcatalog');
-});
+})->middleware(['auth']);
 
-Route::get('/shopdetails',function () {
+Route::get('/shopdetails', function () {
     return view('shopdetails');
-});
+})->middleware(['auth']);
 
-Route::get('/contact',function () {
-    return view('contact');
-});
+// Untuk redirect ke Google
+Route::get('login/google/redirect', [SocialiteController::class, 'redirect'])
+    ->middleware(['guest'])
+    ->name('redirect');
 
+// Untuk callback dari Google
+Route::get('login/google/callback', [SocialiteController::class, 'callback'])
+    ->middleware(['guest'])
+    ->name('callback');
+
+// Untuk logout
+Route::get('logout', [SocialiteController::class, 'logout'])
+    ->middleware(['auth'])
+    ->name('logout');
