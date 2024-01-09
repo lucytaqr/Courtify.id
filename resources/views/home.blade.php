@@ -46,7 +46,7 @@
                 Temukan lapangan olahraga impian Anda dengan mudah di sini! Dengan antarmuka yang sederhana dan sistem pemesanan yang cepat, Anda bisa menemukan lapangan yang tepat sesuai kebutuhan Anda.
             </p>
               <div class="text-center text-lg-start">
-                <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <a href="/learnmore" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Selengkapnya</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -55,7 +55,7 @@
           </div>
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/awal.jpg" width="480" height="400" class="img-fluid" alt="">
+            <img src="assets/img/awal.jpg" width="580" height="500" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -382,7 +382,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-box blue">
-              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
+              <img src="assets/img/soccer.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Futsal</h3>
               <p>Nikmati aksi cepat dan teknis di lapangan futsal kami yang nyaman. Sempurna untuk pertandingan antar teman atau latihan intens.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -391,7 +391,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-box orange">
-              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
+              <img src="assets/img/basketball.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Basket</h3>
               <p>Dapatkan kesempatan untuk mempertajam keterampilan bola basket Anda di lapangan kami yang luas. Sempurna untuk pertandingan seru atau latihan bersama tim.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -400,7 +400,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-box green">
-              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
+              <img src="assets/img/volley.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Voli</h3>
               <p>Rasakan semangat kompetisi dan kerjasama di lapangan voli kami yang lapang. Cocok untuk pertandingan santai atau turnamen yang penuh semangat.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -409,7 +409,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-box red">
-              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
+              <img src="assets/img/badminton.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Badminton</h3>
               <p>Bermainlah dengan lincah dan fleksibel di lapangan badminton kami yang nyaman. Tersedia untuk pertandingan seru atau latihan individu.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -418,7 +418,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-box purple">
-              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
+              <img src="assets/img/golf.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Golf</h3>
               <p>Rasakan keindahan alam dan ketegangan permainan golf di lapangan kami yang terawat dengan baik. Sempurna untuk putaran santai atau kompetisi serius.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
@@ -427,7 +427,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
             <div class="service-box pink">
-              <img src="assets/img/values-2.png"  width="250" height="250" class="img-fluid" alt="">
+              <img src="assets/img/tennis.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Tennis</h3>
               <p>Hadapi lawan Anda dengan energi penuh di lapangan tenis kami yang terawat. Cocok untuk pertandingan ganda atau latihan pribadi.</p>
               <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>

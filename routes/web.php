@@ -21,6 +21,10 @@ Route::get('/',function () {
     return view('home');
 });
 
+Route::get('/learnmore',function () {
+    return view('learnmore');
+});
+
 Route::get('/login',function () {
     return view('login');
 });
