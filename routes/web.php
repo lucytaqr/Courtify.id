@@ -18,9 +18,6 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-
-Route::get('/login', function () {
-
 Route::get('/learnmore',function () {
     return view('learnmore');
 });
