@@ -48,3 +48,8 @@ Route::get('login/google/callback', [SocialiteController::class, 'callback'])
 Route::get('logout', [SocialiteController::class, 'logout'])
     ->middleware(['auth'])
     ->name('logout');
+
+Route::get('/profile',function () {
+    return view('profil');
+});
+
