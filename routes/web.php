@@ -18,9 +18,6 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-
-Route::get('/login', function () {
-
 Route::get('/learnmore',function () {
     return view('learnmore');
 });
@@ -51,3 +48,8 @@ Route::get('login/google/callback', [SocialiteController::class, 'callback'])
 Route::get('logout', [SocialiteController::class, 'logout'])
     ->middleware(['auth'])
     ->name('logout');
+
+Route::get('/profile',function () {
+    return view('profil');
+});
+
