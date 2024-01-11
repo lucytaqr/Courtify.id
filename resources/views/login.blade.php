@@ -69,6 +69,8 @@
                                         <div class="form">
                                             <form method="" html="{:multipart=>true}" data-remote="true"
                                                 action="" accept-charset="UTF-8">
+                                                <input id="name" class="form-control" type="text"
+                                                    placeholder="Name" name="name">
                                                 <input id="email" class="form-control" type="text"
                                                     placeholder="Email" name="email">
                                                 <input id="password" class="form-control" type="password"
@@ -104,7 +106,7 @@
                                         </div>
                                         <div class="forgot register-footer" style="display:none">
                                             <span>Already have an account?</span>
-                                            <a href="javascript: showLoginForm();">Login</a>
+                                            <a href="javascript: showLoginForm();">Sign In</a>
                                         </div>
                                     </div>
                                 </div>
