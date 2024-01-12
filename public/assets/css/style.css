@@ -7,6 +7,46 @@
 */
 
 /*--------------------------------------------------------------
+# New
+--------------------------------------------------------------*/
+.bgprofil {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.bgform {
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.input-section {
+  margin: 0.5em 0;
+}
+
+
+label {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+input {
+  display: block;
+  outline: none;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  border: 1.5px solid #d0d0d0;
+}
+
+
+.space {
+  margin-top: 2em;
+  margin-left: 410px;
+}
+
+
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 :root {
@@ -80,6 +120,14 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 60px 0;
+  background: #5969f3;
+  min-height: 40px;
+  margin-top: 82px;
+  color: #fff;
+}
+
+.banner {
+  padding: 20px 0;
   background: #5969f3;
   min-height: 40px;
   margin-top: 82px;
