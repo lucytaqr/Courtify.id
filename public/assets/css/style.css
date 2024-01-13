@@ -38,10 +38,16 @@ input {
   border: 1.5px solid #d0d0d0;
 }
 
-
 .space {
   margin-top: 2em;
   margin-left: 410px;
+}
+
+.usericon {
+  color: #012970; 
+  margin-left: 20px; 
+  width: 18; 
+  margin-left: 20px; 
 }
 
 

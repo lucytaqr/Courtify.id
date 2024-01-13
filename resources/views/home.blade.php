@@ -1,8 +1,8 @@
-@extends("layouts.layout")
+@extends('layouts.main')
 
-@section("title", "COURTIFY")
+@section('container')
 
-@section("content")
+@include('partials.navbar')
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">

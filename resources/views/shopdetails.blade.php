@@ -1,8 +1,8 @@
-@extends("layouts.layout")
+@extends('layouts.main')
 
-@section("title", "COURTIFY - Catalog")
+@section('container')
 
-@section("content")
+@include('partials.navbar')
 
 <main id="main">
 

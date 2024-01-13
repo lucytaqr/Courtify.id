@@ -1,10 +1,10 @@
 <div class="bgprofil">
     
-@extends("layouts.layout")
+  @extends('layouts.main')
 
-@section("title", "COURTIFY - Profile")
-
-@section("content")
+  @section('container')
+  
+  @include('partials.navbar')
 
 <!-- ======= Breadcrumbs ======= -->
 <section class= "banner">
