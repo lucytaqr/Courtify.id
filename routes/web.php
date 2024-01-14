@@ -1,7 +1,15 @@
 <?php
 
-use App\Http\Controllers\SocialiteController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LearnmoreController;
+use App\Http\Controllers\SocialiteController;
+use App\Http\Controllers\LoginmanualController;
+use App\Http\Controllers\ShopcatalogController;
+use App\Http\Controllers\ShopdetailsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,25 +22,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])
+    ->name('home');
 
-Route::get('/learnmore',function () {
-    return view('learnmore');
-});
+Route::get('/learnmore', [LearnmoreController::class, 'index']);
 
-Route::get('/login',function () {
-    return view('login');
+Route::get('/login', function () {
+    return view('login.index');
 })->name('login')->middleware(['guest']);
+Route::post('/login', [LoginController::class, 'authenticate']);
 
-Route::get('/shop', function () {
-    return view('shopcatalog');
-})->middleware(['auth']);
+Route::get('/shop', [ShopcatalogController::class, 'index'])
+    ->middleware(['auth']);
 
-Route::get('/shopdetails', function () {
-    return view('shopdetails');
-})->middleware(['auth']);
+Route::get('/shopdetails', [ShopdetailsController::class, 'index'])
+    ->middleware(['auth']);
 
 // Untuk redirect ke Google
 Route::get('login/google/redirect', [SocialiteController::class, 'redirect'])
