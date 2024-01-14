@@ -52,3 +52,10 @@ Route::get('login/google/callback', [SocialiteController::class, 'callback'])
 Route::get('logout', [SocialiteController::class, 'logout'])
     ->middleware(['auth'])
     ->name('logout');
+
+Route::get('/profile', [ProfilController::class, 'index']);
+
+Route::get('/register', [RegisterController::class, 'index']);
+Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/loginmanual', [LoginmanualController::class, 'index']);
