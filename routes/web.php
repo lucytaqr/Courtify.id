@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\AdmindashController;
 use App\Http\Controllers\LearnmoreController;
 use App\Http\Controllers\SocialiteController;
 use App\Http\Controllers\LoginmanualController;
@@ -58,5 +59,4 @@ Route::get('/profile', [ProfilController::class, 'index']);
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/loginmanual', [LoginmanualController::class, 'index']);
-
+Route::get('/admin', [AdmindashController::class, 'index']);

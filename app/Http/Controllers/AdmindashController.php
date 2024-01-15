@@ -5,12 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class LoginmanualController extends Controller
+class AdmindashController extends Controller
 {
     public function index()
     {
-        return view('login.index', [
-            "title" => "Login"
-        ]);
+        return view('admin.index');
     }
 }
