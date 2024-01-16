@@ -9,6 +9,8 @@ class AdmindashController extends Controller
 {
     public function index()
     {
-        return view('admin.index');
+        return view('admin.index', [
+            "title" => "COURTIFY - Dashboard Admin"
+        ]);
     }
 }

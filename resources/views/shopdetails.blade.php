@@ -4,6 +4,13 @@
 
 @include('partials.navbar')
 
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
 <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
@@ -127,4 +134,5 @@
 
 </main>
 
+@include ('partials.mainfooter')
 @endsection
