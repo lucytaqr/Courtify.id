@@ -8,7 +8,6 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdmindashController;
 use App\Http\Controllers\LearnmoreController;
 use App\Http\Controllers\SocialiteController;
-use App\Http\Controllers\LoginmanualController;
 use App\Http\Controllers\ShopcatalogController;
 use App\Http\Controllers\ShopdetailsController;
 
@@ -54,7 +53,8 @@ Route::get('logout', [SocialiteController::class, 'logout'])
     ->middleware(['auth'])
     ->name('logout');
 
-Route::get('/profile', [ProfilController::class, 'index']);
+Route::get('/profile', [ProfilController::class, 'index'])
+    ->middleware(['auth']);
 
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
