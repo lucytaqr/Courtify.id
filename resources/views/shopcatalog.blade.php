@@ -1,23 +1,19 @@
-@extends("layouts.layout")
+@extends('layouts.main')
 
-@section("title", "COURTIFY - Catalog")
+@section('container')
 
-@section("content")
+@include('partials.navbar')
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
 
 <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Sewa Lapangan</li>
-        </ol>
-        <h2><b>SEWA LAPANGAN TERBAIKMU DISINI</b></h2>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
+    @include('partials.banner')
 
     <!-- ======= Recent Blog Posts Section ======= -->
     <section id="recent-blog-posts" class="recent-blog-posts">
@@ -148,4 +144,5 @@
 
     </main>        
 
+@include ('partials.mainfooter')
 @endsection

@@ -1,8 +1,15 @@
-@extends("layouts.layout")
+@extends('layouts.main')
 
-@section("title", "COURTIFY - Catalog")
+@section('container')
 
-@section("content")
+@include('partials.navbar')
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
 
 <main id="main">
 
@@ -127,4 +134,5 @@
 
 </main>
 
+@include ('partials.mainfooter')
 @endsection
