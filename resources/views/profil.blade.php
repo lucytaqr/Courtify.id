@@ -6,22 +6,7 @@
   
   @include('partials.navbar')
 
-<!-- Template Main CSS File -->
-<link href="assets/css/style.css" rel="stylesheet">
 
-</head>
-
-<body>
-
-<!-- ======= Breadcrumbs ======= -->
-<section class= "banner">
-    <div class="container">
-        
-      <h2 style="margin-left: 30px"><b>PROFILE</b></h2>
-
-    </div>
-  </section>
-<!-- End Breadcrumbs -->
 
 <!-- ======= About Section ======= -->
 <section id="about" class="about">
@@ -36,11 +21,11 @@
                 <form action="" method="post">
                     <div class="input-section">
                         <label for="nama">Nama Lengkap</label>
-                        <input type="text" name="nama" id="nama">
+                        <input type="text" name="nama" id="nama" value="{{ auth()->user()->name }}">
                     </div>
                     <div class="input-section">
                         <label for="username">Username</label>
-                        <input type="text" name="username" id="username">
+                        <input type="text" name="username" id="username" value="{{ auth()->user()->username }}">
                     </div>
                     <div class="input-section">
                         <label for="ponsel">Nomor Ponsel</label>
@@ -48,7 +33,7 @@
                     </div>
                     <div class="input-section">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email" value="{{ auth()->user()->email }}">
                     </div>
                 </form>
 

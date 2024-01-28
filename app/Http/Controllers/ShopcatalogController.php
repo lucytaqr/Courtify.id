@@ -10,7 +10,8 @@ class ShopcatalogController extends Controller
     public function index()
     {
         return view('shopcatalog', [
-            "title" => "COURTIFY - Catalog"
+            "title" => "COURTIFY - Catalog",
+            "banner" => "SEWA LAPANGAN TERBAIKMU DISINI"
         ]);
     }
 }

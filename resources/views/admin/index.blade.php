@@ -1,116 +1,10 @@
-@extends('layouts.main')
+@extends('admin.layouts.main')
 
 @section('container')
 
-<!-- Template Main CSS File -->
-  <link href="assets/css/dashboard.css" rel="stylesheet">
+@include('admin.layouts.header')
 
-</head>
-
-<body>
-
-@include('partials.dashnavbar')
-
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
-
-    <ul class="sidebar-nav" id="sidebar-nav">
-
-      <li class="nav-item">
-        <a class="nav-link " href="index.html">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
-        </a>
-      </li><!-- End Dashboard Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq.html">
-          <i class="bi bi-question-circle"></i>
-          <span>Pertanyaan User</span>
-        </a>
-      </li><!-- End F.A.Q Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-people"></i><span>Data User</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="forms-elements.html">
-              <i class="bi bi-circle"></i><span>Kelola Pesanan</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-layouts.html">
-              <i class="bi bi-circle"></i><span>Kelola Pembatalan</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Pesanan Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Data Lapangan</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="forms-elements.html">
-              <i class="bi bi-circle"></i><span>Kelola Pesanan</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-layouts.html">
-              <i class="bi bi-circle"></i><span>Kelola Pembatalan</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Pesanan Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-credit-card"></i><span>Kode Pembayaran</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="forms-elements.html">
-              <i class="bi bi-circle"></i><span>Kelola Pesanan</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-layouts.html">
-              <i class="bi bi-circle"></i><span>Kelola Pembatalan</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Pesanan Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Data Penyewaan</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="forms-elements.html">
-              <i class="bi bi-circle"></i><span>Kelola Pesanan</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-layouts.html">
-              <i class="bi bi-circle"></i><span>Kelola Pembatalan</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Pesanan Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-datalap.html">
-          <i class="bi bi-box-arrow-right"></i>
-          <span>Sign Out</span>
-        </a>
-      </li><!-- End Tambah Data Lapangan Page Nav -->
-    </ul>
-
-  </aside><!-- End Sidebar-->
+@include('admin.layouts.sidebar')
 
   <main id="main" class="main">
 
@@ -456,5 +350,5 @@
 
   </main><!-- End #main -->
 
-@include('partials.dashfooter')
+@include('admin.layouts.footer')
 @endsection

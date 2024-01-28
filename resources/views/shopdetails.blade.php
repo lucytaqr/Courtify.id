@@ -1,14 +1,8 @@
 @extends('layouts.main')
 
 @section('container')
-    @include('partials.navbar')
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    </head>
-
-    <body>
+@include('partials.navbar')
 
         <main id="main">
 
