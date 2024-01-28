@@ -6,7 +6,7 @@
         <li><a href="index.html">Home</a></li>
         <li>Sewa Lapangan</li>
       </ol>
-      <h2><b>{{$banner}}</b></h2>
+      <h2><b>{{ $banner }}</b></h2>
 
     </div>
   </section><!-- End Breadcrumbs -->

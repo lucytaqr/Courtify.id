@@ -4,7 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\SucceedController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\LearnmoreController;
 use App\Http\Controllers\SocialiteController;
 use App\Http\Controllers\ShopcatalogController;
@@ -74,4 +77,13 @@ Route::get('/dashboard', [DashboardUserController::class, 'index'])
     ->middleware(['auth']);
 
 Route::get('/admin/pertanyaan', [DashboardPertanyaanController::class, 'index'])
+    ->middleware(['auth']);
+
+Route::get('/keranjang', [KeranjangController::class, 'index'])
+    ->middleware(['auth']);
+
+Route::get('/checkout', [CheckoutController::class, 'index'])
+    ->middleware(['auth']);
+
+Route::get('/succeed', [SucceedController::class, 'index'])
     ->middleware(['auth']);

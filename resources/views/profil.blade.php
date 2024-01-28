@@ -6,15 +6,7 @@
   
   @include('partials.navbar')
 
-<!-- ======= Breadcrumbs ======= -->
-<section class= "banner">
-    <div class="container">
-        
-      <h2 style="margin-left: 30px"><b>Profile</b></h2>
 
-    </div>
-  </section>
-<!-- End Breadcrumbs -->
 
 <!-- ======= About Section ======= -->
 <section id="about" class="about">

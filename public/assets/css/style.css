@@ -23,7 +23,6 @@
   margin: 0.5em 0;
 }
 
-
 label {
   margin-bottom: 0.5em;
   font-weight: 500;
@@ -48,6 +47,11 @@ input {
   margin-left: 20px; 
   width: 18; 
   margin-left: 20px; 
+}
+
+.bgabu {
+  background-color: #F8F5F5;
+  width: 90%;
 }
 
 
