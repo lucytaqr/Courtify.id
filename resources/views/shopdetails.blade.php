@@ -4,7 +4,7 @@
     @include('partials.navbar')
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/shopdetails.css" rel="stylesheet">
 
     </head>
 
