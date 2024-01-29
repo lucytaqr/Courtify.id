@@ -13,4 +13,18 @@ class HomeController extends Controller
             "title" => "COURTIFY"
         ]);
     }
+
+    public function user()
+    {
+        return view('home', [
+            "title" => "COURTIFY"
+        ]);
+    }
+
+    public function admin()
+    {
+        return view('home', [
+            "title" => "COURTIFY"
+        ]);
+    }
 }

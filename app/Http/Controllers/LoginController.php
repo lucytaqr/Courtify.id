@@ -10,9 +10,7 @@ class LoginController extends Controller
 {
     public function index()
     {
-        return view('login.index', [
-            "title" => "Login"
-        ]);
+        return view('login.index');
     }
 
     public function authenticate(Request $request)
@@ -23,6 +21,11 @@ class LoginController extends Controller
         ]);
 
         if(Auth::attempt($credentials)) {
+            if(Auth::user()->role == 'user') {
+                return redirect('/');
+            } elseif(Auth::user()->role == 'admin') {
+                return redirect('/admin');
+            }
             $request->session()->regenerate();
             return redirect()->intended('/');
         }

@@ -4,13 +4,6 @@
 
 @include('partials.navbar')
 
-<!-- Template Main CSS File -->
-<link href="assets/css/style.css" rel="stylesheet">
-
-</head>
-
-<body>
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
 

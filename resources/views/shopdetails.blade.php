@@ -1,8 +1,6 @@
 @extends('layouts.main')
 
 @section('container')
-    @include('partials.navbar')
-
     <!-- Template Main CSS File -->
     <link href="assets/css/shopdetails.css" rel="stylesheet">
 
