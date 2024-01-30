@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DashboardPertanyaanController extends Controller
+class PertanyaanController extends Controller
 {
     public function index()
     {

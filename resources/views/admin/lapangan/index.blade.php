@@ -27,12 +27,13 @@
             <div class="card-body">
 
               <!-- Table with stripped rows -->
-              <table class="table datatable">
+              <table class="table datatable" style="text-align: center">
                 <thead>
                   <tr>
                     <th>
-                      <b>N</b>ama Lapangan
+                      <b>N</b>o
                     </th>
+                    <th>Nama Lapangan</th>
                     <th>Cabor</th>
                     <th>Wilayah</th>
                     <th>Harga</th>
@@ -41,6 +42,7 @@
                 </thead>
                 <tbody>
                   <tr>
+                    <td>1</td>
                     <td>Unity Pugh</td>
                     <td>9958</td>
                     <td>Curicó</td>
