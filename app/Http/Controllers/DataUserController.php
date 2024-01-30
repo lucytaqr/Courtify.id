@@ -2,19 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Lapangan;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DashboardLapanganController extends Controller
+class DataUserController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('admin.lapangan.index', [
-            "title" => "COURTIFY - Dashboard Lapangan"
+        return view('admin.datauser.index', [
+            "title" => "COURTIFY - Dashboard Data User"
         ]);
     }
 
@@ -37,7 +36,7 @@ class DashboardLapanganController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Lapangan $lapangan)
+    public function show(string $id)
     {
         //
     }
@@ -45,7 +44,7 @@ class DashboardLapanganController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Lapangan $lapangan)
+    public function edit(string $id)
     {
         //
     }
@@ -53,7 +52,7 @@ class DashboardLapanganController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Lapangan $lapangan)
+    public function update(Request $request, string $id)
     {
         //
     }
@@ -61,7 +60,7 @@ class DashboardLapanganController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Lapangan $lapangan)
+    public function destroy(string $id)
     {
         //
     }

@@ -9,11 +9,10 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Lapangan</h1>
+      <h1>Pertanyaan User</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Data Lapangan</li>
           <li class="breadcrumb-item active">Lapangan</li>
         </ol>
       </nav>
@@ -34,10 +33,11 @@
                       <b>N</b>o
                     </th>
                     <th>Nama</th>
+                    <th>Username</th>
                     <th>Email</th>
                     <th>Nomor Hp</th>
-                    <th>Domisili</th>
-                    <th>Pertanyaan</th>
+                    <th>Status</th>
+                    <th>Tanggal Dibuat</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -45,10 +45,11 @@
                   <tr>
                     <td>1</td>
                     <td>Fanny</td>
+                    <td>fanny123</td>
                     <td>Fanny2@gmail.com</td>
                     <td>08299955899</td>
-                    <td>Kota Riau</td>
-                    <td>Apa bisa jika saya ingin mendaftarkan venue saya?</td>
+                    <td>Aktif</td>
+                    <td>30 Januari 2024</td>
                     <td></td>
                   </tr>
                 </tbody>

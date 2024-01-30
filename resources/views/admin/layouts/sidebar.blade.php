@@ -11,6 +11,13 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
+        <a class="nav-link {{ Request::is('') ? '' : 'collapsed' }}" href="/">
+          <i class="bi bi-globe-americas"></i>
+          <span>Lihat Web</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
         <a class="nav-link {{ Request::is('admin/pertanyaan') ? '' : 'collapsed' }}" href="/admin/pertanyaan">
           <i class="bi bi-question-circle"></i>
           <span>Pertanyaan User</span>
@@ -18,31 +25,10 @@
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link {{ Request::is('#') ? '' : 'collapsed' }}" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-people"></i><span>Data User</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link {{ Request::is('admin/datauser') ? '' : 'collapsed' }}" href="/admin/datauser">
+          <i class="bi bi-people"></i>
+          <span>Data User</span>
         </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="forms-elements.html">
-              <i class="bi bi-circle"></i><span>Form Elements</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-layouts.html">
-              <i class="bi bi-circle"></i><span>Form Layouts</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span>Form Editors</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-validation.html">
-              <i class="bi bi-circle"></i><span>Form Validation</span>
-            </a>
-          </li>
-        </ul>
       </li><!-- End Data User Nav -->
 
       <li class="nav-item">
