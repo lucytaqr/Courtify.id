@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@include('partials.navbar')
+
 @section('container')
     <!-- Template Main CSS File -->
     <link href="assets/css/shopdetails.css" rel="stylesheet">
@@ -101,8 +103,8 @@
                                                 href="blog-single.html"><time datetime="2020-01-01">Jan 25, 2024</time></a>
                                         </li>
                                         {{-- <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a
-                                                href="blog-single.html">12 Comments</a></li>
-                                        <li class="d-flex align-items-center"><i class="bi bi-wifi"></i> --}}
+                                        href="blog-single.html">12 Comments</a></li>
+                                <li class="d-flex align-items-center"><i class="bi bi-wifi"></i> --}}
 
                                     </ul>
                                 </div>
