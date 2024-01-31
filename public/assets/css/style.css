@@ -74,13 +74,16 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+h1
+{
+  font-family: "Poppins", sans-serif;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nonito", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -150,6 +153,7 @@ section {
   font-size: 28px;
   font-weight: 500;
   text-align: center;
+  color: #fff; 
 }
 
 .breadcrumbs ol {
@@ -230,6 +234,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  position: fixed;
 }
 
 .header.header-scrolled {
@@ -255,6 +260,7 @@ section {
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -535,7 +541,7 @@ section {
 
 .hero h1 {
   margin: 0;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 700;
   color: #012970;
 }

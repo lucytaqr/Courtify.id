@@ -16,6 +16,8 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link href="assets/css/register.css" rel="stylesheet" />
+
 
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap.js" type="text/javascript"></script>
@@ -54,21 +56,21 @@
                                         placeholder="Username" name="username" required value="{{ old('username') }}">
                                     @error('username')
                                         <div class="invalid-feedback">
-                                            {{$message}}
+                                            {{$message}} 
                                         </div>
                                     @enderror
                                     <input id="email" class="form-control @error('email')is-invalid @enderror" type="email"
                                         placeholder="Email" name="email" required value="{{ old('email') }}">
                                     @error('email')
                                         <div class="invalid-feedback">
-                                            {{$message}}
+                                            {{$message}} 
                                         </div>
                                     @enderror
                                     <input id="password" class="form-control @error('password')is-invalid @enderror" type="password"
                                         placeholder="Password" name="password" required>
                                     @error('password')
                                         <div class="invalid-feedback">
-                                            {{$message}}
+                                            {{$message}}  
                                         </div>
                                     @enderror
                                     {{-- <input id="password_confirmation" class="form-control" type="password"
