@@ -302,4 +302,5 @@
     </body>
     </main>        
 
+@include ('partials.mainfooter')
 @endsection

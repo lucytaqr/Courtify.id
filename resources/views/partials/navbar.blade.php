@@ -9,10 +9,10 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="/shop">Sewa Lapangan</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="bi bi-cart3" href="#contact"></a></li>
+          <li><a class="nav-link scrollto {{ Request::is('/') ? 'active' : '' }}" href="/">Home</a></li>
+          <li><a class="nav-link scrollto {{ Request::is('shop') ? 'active' : '' }}" href="/shop">Sewa Lapangan</a></li>
+          <li><a class="nav-link scrollto {{ Request::is('contact') ? 'active' : '' }}" href="/contact">Contact</a></li>
+          <li><a class="nav-link scrollto bi bi-cart3 {{ Request::is('keranjang') ? 'active' : '' }}" href="/keranjang"></a></li>
           <li><a class="nav-link scrollto"> | </a></li>
           @auth
           <li><iconify-icon icon="solar:user-outline" class="usericon"></iconify-icon></li>

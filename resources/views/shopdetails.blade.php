@@ -127,4 +127,5 @@
 
 </main>
 
+@include ('partials.mainfooter')
 @endsection

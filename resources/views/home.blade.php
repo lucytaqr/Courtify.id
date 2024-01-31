@@ -1137,4 +1137,5 @@
 
   </main><!-- End #main -->
 
+  @include ('partials.mainfooter')
   @endsection
