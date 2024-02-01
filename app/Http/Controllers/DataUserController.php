@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class DataUserController extends Controller
@@ -13,7 +14,8 @@ class DataUserController extends Controller
     public function index()
     {
         return view('admin.datauser.index', [
-            "title" => "COURTIFY - Dashboard Data User"
+            "title" => "COURTIFY - Dashboard Data User",
+            'datausers' => User::all()
         ]);
     }
 
