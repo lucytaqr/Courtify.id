@@ -58,7 +58,7 @@
                                     <ul>
                                         <li><strong>Rp 30.000</strong> Per Sesi</li>
                                         <br>
-                                        <a class="btn btn-primary" href="#" role="button">Cek Ketersediaan</a>
+                                        <a class="btn btn-primary" href="ketersediaan" role="button">Cek Ketersediaan</a>
                                     </ul>
                             </div>
                             </blockquote>
@@ -233,8 +233,10 @@
                                                         <p class="status">Booked</p>
                                                     </div>
                                                     <div class="time-slot">
-                                                        <p class="time">21:00 - 22:00</p>
-                                                        <p class="price">Rp45.000</p>
+                                                        <a href="keranjang">
+                                                            <p class="time">21:00 - 22:00</p>
+                                                            <p class="price">Rp45.000</p>
+                                                        </a>
                                                     </div>
                                                     <script>
                                                         document.getElementById('myButton').addEventListener('click', function() {
@@ -250,8 +252,10 @@
                                                     <p class="status">Booked</p>
                                                 </div>
                                                 <div class="time-slot">
-                                                    <p class="time">21:00 - 22:00</p>
-                                                    <p class="price">Rp45.000</p>
+                                                    <a href="keranjang">
+                                                        <p class="time">21:00 - 22:00</p>
+                                                        <p class="price">Rp45.000</p>
+                                                    </a>
                                                 </div>
                                                 <script>
                                                     document.getElementById('myButton').addEventListener('click', function() {
@@ -286,6 +290,7 @@
                                                         <p class="status">Booked</p>
                                                     </div>
                                                     <div class="time-slot">
+                                                        <a href="keranjang"></a>
                                                         <p class="time">21:00 - 22:00</p>
                                                         <p class="price">Rp45.000</p>
                                                     </div>
@@ -303,6 +308,7 @@
                                                     <p class="status">Booked</p>
                                                 </div>
                                                 <div class="time-slot">
+                                                    <a href="keranjang"></a>
                                                     <p class="time">21:00 - 22:00</p>
                                                     <p class="price">Rp45.000</p>
                                                 </div>
@@ -323,7 +329,7 @@
                                         </ul>
                                         <div class="container my-5 py-5 text-dark">
                                             <div class="row">
-                                                <div class="col-md-11 col-lg-9 col-xl-7">
+                                                <div class="col-md-11 col-lg-13 col-xl-20">
                                                     <div class="comment-container">
                                                         <!-- First Comment -->
                                                         <div class="comment-card">
