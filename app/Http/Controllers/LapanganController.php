@@ -6,7 +6,7 @@ use App\Models\Lapangan;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DashboardLapanganController extends Controller
+class LapanganController extends Controller
 {
     /**
      * Display a listing of the resource.
