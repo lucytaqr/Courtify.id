@@ -17,6 +17,8 @@ use App\Http\Controllers\ShopcatalogController;
 use App\Http\Controllers\ShopdetailsController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\KetersediaanController;
+
 
 
 /*
@@ -29,7 +31,8 @@ use App\Http\Controllers\DashboardAdminController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::middleware(['guest'])->group(function(){
+
+Route::middleware(['guest'])->group(function () {
     Route::get('/login', [LoginController::class, 'index'])
         ->name('login');
     Route::post('/login', [LoginController::class, 'authenticate']);
@@ -43,16 +46,17 @@ Route::middleware(['guest'])->group(function(){
     Route::post('/register', [RegisterController::class, 'store']);
 });
 
-Route::get('home', function(){
+Route::get('home', function () {
     return redirect('/');
 });
 
-Route::middleware(['auth'])->group(function(){
+Route::middleware(['auth'])->group(function () {
     Route::get('/shop', [ShopcatalogController::class, 'index']);
     Route::get('/shopdetails', [ShopdetailsController::class, 'index']);
     Route::get('/profile', [ProfilController::class, 'index']);
     Route::get('/dashboard', [DashboardUserController::class, 'index']);
     Route::get('/keranjang', [KeranjangController::class, 'index']);
+    Route::get('/ketersediaan', [KetersediaanController::class, 'index']);
     Route::get('/checkout', [CheckoutController::class, 'index']);
     Route::get('/succeed', [SucceedController::class, 'index']);
     Route::get('/admin', [DashboardAdminController::class, 'index'])->middleware('userAkses:admin');
@@ -68,12 +72,3 @@ Route::get('/', [HomeController::class, 'index'])
     ->name('home');
 
 Route::get('/learnmore', [LearnmoreController::class, 'index']);
-
-
-
-
-
-
-
-
-
