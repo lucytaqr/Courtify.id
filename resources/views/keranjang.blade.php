@@ -9,14 +9,150 @@
 
     @include('partials.bannerxs')
 
-  <!-- ======= Search ======= -->
-    <div class="input-group mt-3">
-      <input type="text" class="form-control" placeholder="Masukkan Booking" aria-label="Masukkan Booking" aria-describedby="basic-addon2">
-      <div class="input-group-append">
-        <button class="btn btn-primary" type="button"><i class="bi bi-search fs-4"></i></button>
+    <div class="container">
+      <div class="table-wrap">
+          <table class="table table-responsive table-borderless">
+              <thead>
+                  <th>&nbsp;</th>
+                  <th>&nbsp;</th>
+                  <th>Lapangan</th>
+                  <th>Tarif/jam</th>
+                  <th>Lama Sewa</th>
+                  <th>Total</th>
+                  <th>&nbsp;</th>
+              </thead>
+              <tbody>
+                  <tr class="align-middle alert border-bottom" role="alert">
+                      <td>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault"></label>
+                        </div>
+                      </td>
+                      <td class="text-center">
+                          <img class="pic"
+                              src="https://www.freepnglogos.com/uploads/shoes-png/dance-shoes-png-transparent-dance-shoes-images-5.png"
+                              alt="">
+                      </td>
+                      <td>
+                          <div>
+                              <p class="m-0 fw-bold">Wijaya Putra Futsal</p> <br>
+                              <p class="m-0 text-muted">Futsal | Lowokwaru</p>
+                              <p class="m-0 text-muted">Minggu, 10 Desember 2024</p> <br>
+                              <p class="m-0 text-muted">18.00 - 19.00</p>
+                          </div>
+                      </td>
+                      <td>
+                          <div class="fw-600">$44.99</div>
+                      </td>
+                      <td class="d-">
+                          <input class="input" type="text" placeholder="2">
+                      </td>
+                      <td>
+                          $89.98
+                      </td>
+                      <td>
+                          <div class="btn" data-bs-dismiss="alert">
+                              <span class="fas fa-times"></span>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr class="align-middle alert border-bottom" role="alert">
+                      <td>
+                          <input type="checkbox" id="check">
+                      </td>
+                      <td class="text-center">
+                          <img class="pic"
+                              src="https://www.freepnglogos.com/uploads/shoes-png/download-vector-shoes-image-png-image-pngimg-2.png"
+                              alt="">
+                      </td>
+                      <td>
+                          <div>
+                              <p class="m-0 fw-bold">Sneakers Shoes 2020 For Men</p>
+                              <p class="m-0 text-muted">Fugiat Voluptates quasi nemo,ipsa perferencis</p>
+                          </div>
+                      </td>
+                      <td>
+                          <div class="fw-600">$54.99</div>
+                      </td>
+                      <td class="d-">
+                          <input class="input" type="text" placeholder="2">
+                      </td>
+                      <td>
+                          $108.98
+                      </td>
+                      <td>
+                          <div class="btn" data-bs-dismiss="alert">
+                              <span class="fas fa-times"></span>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr class="align-middle alert border-bottom" role="alert">
+                      <td>
+                          <input type="checkbox" id="check">
+                      </td>
+                      <td class="text-center">
+                          <img class="pic"
+                              src="https://www.freepnglogos.com/uploads/shoes-png/running-shoes-png-transparent-running-shoes-images-6.png"
+                              alt="">
+                      </td>
+                      <td>
+                          <div>
+                              <p class="m-0 fw-bold">Sneakers Shoes 2020 For Men</p>
+                              <p class="m-0 text-muted">Fugiat Voluptates quasi nemo,ipsa perferencis</p>
+                          </div>
+                      </td>
+                      <td>
+                          <div class="fw-600">$50.99</div>
+                      </td>
+                      <td class="d-">
+                          <input class="input" type="text" placeholder="2">
+                      </td>
+                      <td>
+                          $100.98
+                      </td>
+                      <td>
+                          <div class="btn" data-bs-dismiss="alert">
+                              <span class="fas fa-times"></span>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr class="align-middle alert border-bottom" role="alert">
+                      <td>
+                          <input type="checkbox" id="check">
+                      </td>
+                      <td class="text-center">
+                          <img class="pic"
+                              src="https://www.freepnglogos.com/uploads/shoes-png/find-your-perfect-running-shoes-26.png"
+                              alt="">
+                      </td>
+                      <td>
+                          <div>
+                              <p class="m-0 fw-bold">Sneakers Shoes 2020 For Men</p>
+                              <p class="m-0 text-muted">Fugiat Voluptates quasi nemo,ipsa perferencis</p>
+                          </div>
+                      </td>
+                      <td>
+                          <div class="fw-600">$74.99</div>
+                      </td>
+                      <td>
+                          <input class="input" type="text" placeholder="2">
+                      </td>
+                      <td>
+                          $148.98
+                      </td>
+                      <td>
+                          <div class="btn" data-bs-dismiss="alert">
+                              <span class="fas fa-times"></span>
+                          </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
       </div>
-    </div>
-  <!-- End Search -->
+  </div>
+
+    
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
@@ -38,32 +174,6 @@
                       <p class="card-text mb-2">Minggu, 10 Desember 2024</p>
                       <p class="card-text mb-2">18.00 - 19.00</p>
                       </small>
-                      {{-- <table>
-                        <thead>
-                          <tr>
-                            <th><h5 class="card-title"><b>Wijaya Putra Futsal</b></h5></th>
-                            <th></th>
-                            <th><h6 class="card-title"><b>Menunggu Pembayaran</b></h6></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><p class="card-text mb-2"><small class="text-body-secondary"><iconify-icon icon="ph:soccer-ball-fill" width="24"></iconify-icon> Futsal | Lowokwaru</small></p></td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td><p class="card-text mb-2"><small class="text-body-secondary">Minggu, 10 Desember 2024</small></p></td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td><p class="card-text mb-2"><small class="text-body-secondary">18.00 - 19.00</small></p></td>
-                            <td></td>
-                            <td><h6 class="card-title"><b>Total Pembayaran : Rp 100.000</b></h6></td>
-                          </tr>
-                        </tbody>
-                      </table> --}}
                     </div>
                   </div>
                 </div>

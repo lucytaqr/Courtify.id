@@ -20,41 +20,36 @@
     
     <!-- Start Trending Product Area -->
 <body>
-    <section div class="s131">
-        <form>
-          <div class="inner-form">
-            <div class="input-field first-wrap">
-              <input id="search" type="text" placeholder="What are you looking for?" />
-            </div>
-            <div class="input-field second-wrap">
-              <div class="input-select">
-                <select data-trigger="" name="choices-single-defaul">
-                  <option placeholder="">CATEGORY</option>
-                  <option>Subject A</option>
-                  <option>Subject B</option>
-                  <option>Subject C</option>
-                </select>
+    <section>
+        <div class="s131">
+            <form>
+              <div class="inner-form">
+                <div class="input-field first-wrap">
+                  <input id="search" type="text" placeholder="What are you looking for?" />
+                </div>
+                <div class="input-field second-wrap">
+                  <div class="input-select">
+                    <select class="form-select p-2" aria-label="Default select example">
+                        <option selected>CATEGORY</option>
+                        <option value="1">Futsal</option>
+                        <option value="2">Basket</option>
+                        <option value="3">Voli</option>
+                        <option value="4">Badminton</option>
+                        <option value="5">Golf</option>
+                        <option value="6">Tennis</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-field third-wrap">
+                  <button class="btn-search" type="button">SEARCH</button>
+                </div>
               </div>
-            </div>
-            <div class="input-field third-wrap">
-              <button class="btn-search" type="button">SEARCH</button>
-            </div>
+            </form>
           </div>
-        </form>
-      </div>
-      <script src="assetsshop/js/extention/choices.js"></script>
-      <script>
-        const choices = new Choices('[data-trigger]',
-        {
-          searchEnabled: false
-        });
-  
-      </script>
     </section>
     <!-- Start Trending Product Area -->
     <section class="trending-product section" style="margin-top: -50px;">
         <div class="container">
-                <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-12">
                     <!-- Start Single Product -->
@@ -62,7 +57,7 @@
                         <div class="product-image">
                             <img src="assets/img/badminton.png" alt="#">
                             <div class="button">
-                                <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> Add to Cart</a>
+                                <a href="/shopdetails" class="btn"><i class="bi bi-info-circle"></i></i> Detail</a>
                             </div>
                         </div>
                         <div class="product-info">
@@ -298,9 +293,17 @@
     </section>
     <!-- End Trending Product Area -->
 
+    <script src="assetsshop/js/extention/choices.js"></script>
+      <script>
+        const choices = new Choices('[data-trigger]',
+        {
+          searchEnabled: false
+        });
+  
+      </script>
     
-    </body>
-    </main>        
+</body>
+</main>        
 
 @include ('partials.mainfooter')
 @endsection
