@@ -18,6 +18,7 @@ use App\Http\Controllers\ShopdetailsController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\KetersediaanController;
+use App\Http\Controllers\ContactController;
 
 
 
@@ -53,6 +54,7 @@ Route::get('home', function () {
 Route::middleware(['auth'])->group(function () {
     Route::get('/shop', [ShopcatalogController::class, 'index']);
     Route::get('/shopdetails', [ShopdetailsController::class, 'index']);
+    
     Route::get('/profile', [ProfilController::class, 'index']);
     Route::get('/dashboard', [DashboardUserController::class, 'index']);
     Route::get('/keranjang', [KeranjangController::class, 'index']);
@@ -72,3 +74,4 @@ Route::get('/', [HomeController::class, 'index'])
     ->name('home');
 
 Route::get('/learnmore', [LearnmoreController::class, 'index']);
+Route::get('/contact', [ContactController::class, 'index']);
