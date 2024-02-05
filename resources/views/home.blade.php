@@ -26,7 +26,6 @@
           </div>
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          {{-- <img src="assets/img/awal3.jpg"  width="900" height="850" class="img-fluid" alt=""> --}}
         </div>
       </div>
     </div>

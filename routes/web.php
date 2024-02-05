@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\SucceedController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\DataSewaController;
 use App\Http\Controllers\DataUserController;
 use App\Http\Controllers\LapanganController;
 use App\Http\Controllers\RegisterController;
@@ -15,6 +16,7 @@ use App\Http\Controllers\SocialiteController;
 use App\Http\Controllers\PertanyaanController;
 use App\Http\Controllers\ShopcatalogController;
 use App\Http\Controllers\ShopdetailsController;
+use App\Http\Controllers\KetersediaanController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\KetersediaanController;
@@ -65,6 +67,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/admin/lapangan', LapanganController::class)->middleware('userAkses:admin');
     Route::get('/admin/pertanyaan', [PertanyaanController::class, 'index'])->middleware('userAkses:admin');
     Route::resource('/admin/datauser', DataUserController::class)->middleware('userAkses:admin');
+    Route::resource('/admin/datasewa', DataSewaController::class)->middleware('userAkses:admin');
     // Untuk logout
     Route::get('logout', [SocialiteController::class, 'logout'])
         ->name('logout');
