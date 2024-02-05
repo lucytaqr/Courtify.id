@@ -1,14 +1,13 @@
 @extends('layouts.main')
 
 @section('container')
+    @include('partials.navbar')
 
-@include('partials.navbar')
+    <main id="main">
 
-<main id="main">
+        @include('partials.banner')
 
-    @include('partials.banner')
-
-    <!-- ======= Recent Blog Posts Section ======= -->
+        <!-- ======= Recent Blog Posts Section ======= -->
 
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assetsshop/css/bootstrap.min.css" />
@@ -305,5 +304,5 @@
 </body>
 </main>        
 
-@include ('partials.mainfooter')
+    @include ('partials.mainfooter')
 @endsection
