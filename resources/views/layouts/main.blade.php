@@ -37,7 +37,7 @@
 
 <body>
 
-@yield('container')
+  @yield('container')
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
