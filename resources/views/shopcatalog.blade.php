@@ -50,19 +50,20 @@
     <section class="trending-product section" style="margin-top: -50px;">
         <div class="container">
             <div class="row">
+                @foreach ($lapangans as $lapangan)
                 <div class="col-lg-3 col-md-6 col-12">
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
                             <img src="assets/img/badminton.png" alt="#">
                             <div class="button">
-                                <a href="/shopdetails" class="btn"><i class="bi bi-info-circle"></i></i> Detail</a>
+                                <a href="/shop/{{ $lapangan->id }}" class="btn"><i class="bi bi-info-circle"></i></i> Detail</a>
                             </div>
                         </div>
                         <div class="product-info">
                             <span class="category">badminton</span>
                             <h4 class="title">
-                                <a href="product-grids.html">Lapangan Sudimoro</a>
+                                <a href="product-grids.html">{{ $lapangan->nama}}</a>
                             </h4>
                             <ul class="review">
                                 <li><i class="lni lni-star-filled"></i></li>
@@ -73,13 +74,15 @@
                                 <li><span>4.0 Review(s)</span></li>
                             </ul>
                             <div class="price">
-                                <span>Rp. 10.000 / jam</span>
+                                <span>Rp. {{ $lapangan->tarif}} / jam</span>
                             </div>
                         </div>
                     </div>
                     <!-- End Single Product -->
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                @endforeach
+                
+                {{-- <div class="col-lg-3 col-md-6 col-12">
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
@@ -286,7 +289,7 @@
                         </div>
                     </div>
                     <!-- End Single Product -->
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

@@ -45,7 +45,7 @@
                     <div class="portfolio-info">    
                         <h2 class="title">Harga</h2>
                         <ul align="center">
-                            <li><b style="font-size: 30">Rp 20.000</b> / jam</li>
+                            <li><b style="font-size: 30">Rp {{ $lapangan->tarif }}</b> / jam</li>
                             <br>
                             <a class="btn btn-primary" href="#" role="button">Cek Ketersediaan</a>
                         </ul>
@@ -90,11 +90,11 @@
                     <div class="row">
                         <div class="col-lg-9 entries">
                             <article class="entry entry-single">
-                                <h2 class="title">Badminton Courts Rajabasa</h2>
+                                <h2 class="title">{{ $lapangan->nama }}</h2>
                                 <div class="entry-meta">
                                     <ul>
                                         <li class="d-flex align-items-center"><i class="bi bi-geo-alt"></i><a
-                                                href="blog-single.html">Kota Malang</a></li>
+                                                href="blog-single.html">{{ $lapangan->kota }}</a></li>
                                         <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a
                                                 href="blog-single.html">Badminton</a></li>
                                         <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a
@@ -105,18 +105,13 @@
 
                                 <div class="entry-content">
                                     <p>
-                                        Gedung yang berada di jalan Terusan Rajabasa ini sudah sejak lama membuka tempat
-                                        latihan
-                                        bulutangkis, baik bagi anak kecil dan orang dewasa. Difasilitasi parkiran yang cukup
-                                        luas dan dibuka dengan 4 lapangan, gedung ini dibuka dari jam 8 pagi hingga 9 malam.
-                                        Namun pada hari Senin gedung ini tutup jam 6 petang. Harga yang dipatok pengelola
-                                        tidaklah mahal untuk fasilitas dan tempat yang disediakan yakni 30 ribu per jamnya.
+                                        {{ $lapangan->deskripsi }}
                                     </p>
                                     <blockquote>
                                         <p>
                                             <span class="h1 fw-bold mb-0" style="font-size: 20px;">Lokasi Venue</span>
                                             <br><br>
-                                            <span class="h1 mb-0" style="font-size: 12px;">Jl. Terusan Rajabasa No. 5 Pisang Candi, Kec.Sukun, Kota Malang, Jawa Timur</span>
+                                            <span class="h1 mb-0" style="font-size: 12px;">{{ $lapangan->alamat }}</span>
                                         </p>
                                     </blockquote>
                                     <br>
