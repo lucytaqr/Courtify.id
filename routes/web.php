@@ -50,6 +50,10 @@ Route::get('home', function(){
 Route::middleware(['auth'])->group(function(){
     Route::get('/shop', [ShopcatalogController::class, 'index']);
     Route::get('/shopdetails', [ShopdetailsController::class, 'index']);
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     Route::get('/profile', [ProfilController::class, 'index']);
     Route::get('/dashboard', [DashboardUserController::class, 'index']);
     Route::get('/keranjang', [KeranjangController::class, 'index']);
