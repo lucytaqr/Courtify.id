@@ -268,5 +268,5 @@
         </main><!-- End #main -->
     </body>
 
-@include('partials.mainfooter')
+@include('partials.footer')
 @endsection
