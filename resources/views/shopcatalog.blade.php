@@ -57,7 +57,8 @@
                         <div class="product-image">
                             <img src="assets/img/badminton.png" alt="#">
                             <div class="button">
-                                <a href="/shopdetails" class="btn"><i class="bi bi-info-circle"></i></i> Detail</a>
+                                <a href="/shopdetails" class="btn" style="margin-bottom: 5px;"><i class="bi bi-info-circle"></i></i> Detail</a>
+                                <a href="/keranjang" class="btn"><i class="lni lni-cart"></i> Add to Cart</a>
                             </div>
                         </div>
                         <div class="product-info">

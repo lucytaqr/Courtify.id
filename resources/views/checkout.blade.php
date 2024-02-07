@@ -45,14 +45,29 @@
                     <table class="table" rules="none">
                         <tbody>
                             <tr style="background-color: #F6F9FF">
-                                <td align="right"><b>Biaya Sewa : Rp 200.000</b></td>
-                            </tr>
-                            <tr style="background-color: #F6F9FF">
-                              <td align="right"><b>Biaya Layanan : Rp 5.000</b></td>
+                                <td align="right">
+                                  <b>Biaya Sewa</b>
+                                </td>
+                                <td align="left">
+                                  <b>Rp 200.000</b>
+                                </td>
                               </tr>
-                            <tr style="background-color: #F6F9FF">
-                              <td align="right"><b style="color: #012970">Total Pembayaran : Rp 205.000</b></td>
-                          </tr>
+                                <tr style="background-color: #F6F9FF">
+                                    <td align="right">
+                                      <b>Biaya Layanan</b>
+                                    </td>
+                                    <td align="left">
+                                      <b>Rp 5.000</b>
+                                    </td>
+                                  </tr>
+                              <tr style="background-color: #F6F9FF">
+                                <td align="right">
+                                  <b>Total Pembayaran</b>
+                                </td>
+                                <td align="left">
+                                  <b>Rp 205.000</b>
+                                </td>
+                              </tr>
                         </tbody>
                     </table>
                   </div>
