@@ -94,10 +94,13 @@
                     <label for="driver-no">
                         <input type="radio" id="driver-no" name="driver-option" value="no" required>
                         No
-                    </label>
+                    </label> 
                 </div> --}}
                 <div class="form-group">
                     <button type="submit">Check Availability</button>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Add to Cart</button>
                 </div>
             </form>
         </div>
