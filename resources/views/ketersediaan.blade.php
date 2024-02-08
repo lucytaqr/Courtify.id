@@ -86,7 +86,7 @@
                 <div class="form-group">
                     <button class="masukan-keranjang">Masukan Keranjang</button>
 
-                    <a class="buttonket" href="keranjang" role="button">Cek Ketersediaan</a>
+                    <a class="buttonket" href="keranjang" role="button">Booking Sekarang</a>
 
                 </div>
             </form>

@@ -42,7 +42,7 @@
             </a>
           </li>
           <li>
-            <a href="/admin/jenislapangan" class="{{ Request::is('admin/jenislapangan') ? 'active' : '' }}">
+            <a href="/admin/jamoperasional" class="{{ Request::is('admin/jamoperasional') ? 'active' : '' }}">
               <i class="bi bi-circle"></i><span>Jam Operasional</span>
             </a>
           </li>

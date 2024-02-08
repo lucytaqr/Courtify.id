@@ -20,6 +20,7 @@ use App\Http\Controllers\KetersediaanController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\JamAdminController;
 
 
 
@@ -63,6 +64,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/succeed', [SucceedController::class, 'index']);
     Route::get('/admin', [DashboardAdminController::class, 'index'])->middleware('userAkses:admin');
     Route::resource('/admin/lapangan', LapanganController::class)->middleware('userAkses:admin');
+    Route::get('/admin/jamoperasional', [JamAdminController::class, 'index'])->middleware('userAkses:admin');
     Route::get('/admin/pertanyaan', [PertanyaanController::class, 'index'])->middleware('userAkses:admin');
     Route::resource('/admin/datauser', DataUserController::class)->middleware('userAkses:admin');
     Route::resource('/admin/datasewa', DataSewaController::class)->middleware('userAkses:admin');
