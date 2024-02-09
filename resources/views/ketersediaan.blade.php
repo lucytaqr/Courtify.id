@@ -34,7 +34,7 @@
                 </div>
                 
                 
-                {{-- <div class="form-group">
+                <div class="form-group">
                     <label for="">Rental Start Time:</label>
                     <div class="time-slots" type="time" id="time" name="time" class="form-control">
                         <div class="time-slot" data-time="06:00-07:00">
@@ -78,7 +78,7 @@
 
                         });
                     });
-                </script> --}}
+                </script>
 
 
                 {{-- <div class="form-group">
@@ -114,7 +114,7 @@
         </div>
 
 
-        {{-- <script>
+        <script>
             const timeSlots = document.querySelectorAll('.time-slot');
 
             timeSlots.forEach(timeSlot => {
@@ -123,7 +123,7 @@
                     console.log(Selected time: ${selectedTime});
                 });
             });
-        </script> --}}
+        </script>
         <script>
             const masukanKeranjangButton = document.querySelector('.masukan-keranjang');
 
