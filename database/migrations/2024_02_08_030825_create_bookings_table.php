@@ -11,8 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('order_items', function (Blueprint $table) {
-            $table->boolean('rstatus')->default(false);
+        Schema::create('bookings', function (Blueprint $table) {
+            $table->id();
+            $table->string('nama');
+            $table->date('date');
+            $table->time('time');
+            $table->timestamps();
         });
     }
 
@@ -21,8 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('order_items', function (Blueprint $table) {
-            $table->boolean('rstatus')->default(false);
-        });
+        Schema::dropIfExists('bookings');
     }
 };

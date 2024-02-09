@@ -14,7 +14,7 @@
           <li><a class="nav-link scrollto {{ Request::is('contact') ? 'active' : '' }}" href="/contact">Contact</a></li>
           <li style="position: relative;">
             <a class="nav-link scrollto bi bi-cart3 {{ Request::is('keranjang') ? 'active' : '' }}" href="/keranjang">
-                <span id="count" style="position: absolute; bottom: -1px; right: -7px; color: #796c6c;">0</span>
+                <span id="count" style="position: absolute; bottom: -1px; right: -7px; color: #796c6c;">{{ count((array) session('cart')) }}</span>
             </a>
         </li>        
           <li><a class="nav-link scrollto"> | </a></li>

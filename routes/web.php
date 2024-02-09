@@ -59,6 +59,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardUserController::class, 'index']);
     Route::get('/keranjang', [KeranjangController::class, 'index']);
     Route::get('/ketersediaan', [KetersediaanController::class, 'index']);
+    Route::post('/ketersediaan', [KetersediaanController::class, 'store']);
+    // Route::post('/ketersediaan/{id}', [KetersediaanController::class, 'addBookingtoCart'])->name('addbooking.to.cart');
+
+    
     Route::get('/checkout', [CheckoutController::class, 'index']);
     Route::get('/succeed', [SucceedController::class, 'index']);
     Route::get('/admin', [DashboardAdminController::class, 'index'])->middleware('userAkses:admin');
