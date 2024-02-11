@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('order_items', function (Blueprint $table) {
-            $table->boolean('rstatus')->default(false);
+        Schema::create('jams', function (Blueprint $table) {
+            $table->id();
+            $table->string('lapangan_id');
+            $table->string('jam');
+            $table->boolean('status');
         });
     }
 
@@ -21,8 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('order_items', function (Blueprint $table) {
-            $table->boolean('rstatus')->default(false);
-        });
+        Schema::dropIfExists('jams');
     }
 };

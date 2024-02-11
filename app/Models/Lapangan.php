@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Lapangan extends Model
 {
     use HasFactory;
+
+    public function jams()
+    {
+        return $this->belongsToMany(Jam::class);
+    }
 }
