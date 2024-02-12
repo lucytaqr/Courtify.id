@@ -93,17 +93,9 @@
     </section>
     <!-- End Trending Product Area -->
 
-    <script src="assetsshop/js/extention/choices.js"></script>
-      <script>
-        const choices = new Choices('[data-trigger]',
-        {
-          searchEnabled: false
-        });
-  
-      </script>
-    
-</body>
-</main>        
+
+        </body>
+    </main>
 
     @include ('partials.footer')
 @endsection

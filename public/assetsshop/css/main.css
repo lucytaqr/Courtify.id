@@ -3326,7 +3326,7 @@ top: 2px;
 }
 
 .single-product:hover .product-image .button {
-  bottom: 30px;
+  bottom: 100px;
   opacity: 1;
   visibility: visible;
 }

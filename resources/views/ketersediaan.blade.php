@@ -7,7 +7,9 @@
 @include('partials.navbar')
 
 @include('partials.bannerxs')
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+@section('container')
     <main id="main">
 
         <div class="containerket">
@@ -67,29 +69,33 @@
                 </script>
 
 
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for="pickup-method">Pilihan Lapangan</label>
                     <select id="pickup-method" name="pickup-method" required>
                         <option value="driver">Badminton Courts Rajabasa 1</option>
                         <option value="self">Badminton Courts Rajabasa 2</option>
                     </select>
-                </div>
+                </div> --}}
                 {{-- <div class="form-group">
                     <label for="driver-option">Driver Option:</label>
                     <label for="driver-yes">
-                        <input type="radio" id="driver-yes" name="driver-option" value="yes" required>
+                        <input type="radio" class="inputket" id="driver-yes" name="driver-option" value="yes" required>
                         Yes
                     </label>
                     <label for="driver-no">
-                        <input type="radio" id="driver-no" name="driver-option" value="no" required>
+                        <input type="radio" class="inputket" id="driver-no" name="driver-option" value="no" required>
                         No
                     </label>
                 </div> --}}
                 <div class="form-group">
-                    <button class="buttonket" type="submit">Check Availability</button>
+                    <button class="masukan-keranjang">Masukan Keranjang</button>
+
+                    <a class="buttonket" href="keranjang" role="button">Booking Sekarang</a>
+
                 </div>
             </form>
         </div>
+
 
         <script>
             const timeSlots = document.querySelectorAll('.time-slot');
@@ -101,6 +107,17 @@
                 });
             });
         </script>
-    </main>
-</div>
+        <script>
+            const masukanKeranjangButton = document.querySelector('.masukan-keranjang');
+
+            masukanKeranjangButton.addEventListener('click', () => {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Produk telah dimasukkan ke keranjang!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
+        </script>
     @endsection

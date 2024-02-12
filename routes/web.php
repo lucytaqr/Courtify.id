@@ -19,7 +19,8 @@ use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Models\Cabor;
 use App\Models\Lapangan;
-
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\JamAdminController;
 
 
 
@@ -61,9 +62,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/ketersediaan', [KetersediaanController::class, 'index']);
     Route::get('/checkout', [CheckoutController::class, 'index']);
     Route::get('/succeed', [SucceedController::class, 'index']);
-    Route::get('/admin', [DashboardAdminController::class, 'index'])->middleware('userAkses:admin');  
-    Route::get('/admin/lapangans/checkSlug', [LapanganController::class, 'checkSlug'])->middleware('userAkses:admin');
-    Route::resource('/admin/lapangans', LapanganController::class)->middleware('userAkses:admin');
+    Route::get('/admin', [DashboardAdminController::class, 'index'])->middleware('userAkses:admin');
+    Route::resource('/admin/lapangan', LapanganController::class)->middleware('userAkses:admin');
     Route::get('/admin/pertanyaan', [PertanyaanController::class, 'index'])->middleware('userAkses:admin');
     Route::resource('/admin/datauser', DataUserController::class)->middleware('userAkses:admin');
     Route::resource('/admin/datasewa', DataSewaController::class)->middleware('userAkses:admin');
@@ -72,7 +72,10 @@ Route::middleware(['auth'])->group(function () {
         ->name('logout');
 });
 
+
+Route::post('/contact/post', [PertanyaanController::class, 'store'])->name('contact.post');
+
 Route::get('/', [HomeController::class, 'index'])
     ->name('home');
 
-Route::get('/learnmore', [HomeController::class, 'learnmore']);
+Route::get('/learnmore', [LearnmoreController::class, 'index']);
