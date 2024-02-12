@@ -73,8 +73,11 @@ Route::middleware(['auth'])->group(function () {
         ->name('logout');
 });
 
+
+Route::post('/contact/post', [PertanyaanController::class, 'store'])->name('contact.post');
+
 Route::get('/', [HomeController::class, 'index'])
     ->name('home');
 
 Route::get('/learnmore', [LearnmoreController::class, 'index']);
-Route::get('/contact', [ContactController::class, 'index']);
+Route::get('/contact', [PertanyaanController::class, 'index']);
