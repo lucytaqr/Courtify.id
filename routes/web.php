@@ -20,6 +20,8 @@ use App\Http\Controllers\KetersediaanController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\ContactController;
+use Illuminate\Http\Request;
+use App\Models\User;
 
 
 
@@ -80,3 +82,19 @@ Route::get('/', [HomeController::class, 'index'])
 
 Route::get('/learnmore', [LearnmoreController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
+
+Route::post('/update-profile', function (Request $request) {
+    // Ambil data perubahan dari permintaan
+    $data = $request->all();
+
+    // Perbarui data pengguna di database
+    $user = User::find(auth()->user()->id);
+    $user->name = $data['nama'];
+    $user->username = $data['username'];
+    $user->ponsel = $data['ponsel'];
+    $user->email = $data['email'];
+    $user->save();
+
+    // Berikan respons ke frontend
+    return response()->json(['message' => 'Data pengguna berhasil diperbarui.']);
+});

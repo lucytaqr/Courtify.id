@@ -93,6 +93,6 @@
 
       </main>
 
-      @include ('partials.mainfooter')
+      @include ('partials.footer')
   @endsection
   
