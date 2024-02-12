@@ -50,4 +50,9 @@ class Lapangan extends Model
     }
 
     
+
+    public function jams()
+    {
+        return $this->belongsToMany(Jam::class);
+    }
 }
