@@ -37,13 +37,13 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="/admin/lapangan" class="{{ Request::is('admin/lapangan') ? 'active' : '' }}">
+            <a href="/admin/lapangans" class="{{ Request::is('admin/lapangan*') ? 'active' : '' }}">
               <i class="bi bi-circle"></i><span>Lapangan</span>
             </a>
           </li>
           <li>
             <a href="/admin/jenislapangan" class="{{ Request::is('admin/jenislapangan') ? 'active' : '' }}">
-              <i class="bi bi-circle"></i><span>Jenis Lapangan</span>
+              <i class="bi bi-circle"></i><span>Jam Operasional</span>
             </a>
           </li>
         </ul>
@@ -73,26 +73,10 @@
       </li><!-- End Kode Pembayaran Nav -->
 
       <li class="nav-item">
-        <a class="nav-link {{ Request::is('#') ? '' : 'collapsed' }}" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Data Penyewaan</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link {{ Request::is('admin/datasewa') ? '' : 'collapsed' }}" href="/admin/datasewa">
+          <i class="bi bi-journal-text"></i>
+          <span>Data Penyewaan</span>
         </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
-            </a>
-          </li>
-        </ul>
       </li><!-- End Data Penyewaan Nav -->
     </ul>
 

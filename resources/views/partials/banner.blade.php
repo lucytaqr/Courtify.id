@@ -1,10 +1,10 @@
 <!-- ======= Breadcrumbs ======= -->
 <section class="breadcrumbs">
-    <div class="container">
+    <div class="container py-1">
 
       <ol>
-        <li><a href="index.html">Home</a></li>
-        <li>Sewa Lapangan</li>
+        <li><a href="/">Home</a></li>
+        <li>{{ $breadcrumbs }}</li>
       </ol>
       <h2><b>{{ $banner }}</b></h2>
 

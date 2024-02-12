@@ -14,17 +14,11 @@ class HomeController extends Controller
         ]);
     }
 
-    public function user()
+    public function learnmore()
     {
-        return view('home', [
-            "title" => "COURTIFY"
+        return view('learnmore', [
+            "title" => "COURTIFY - Learn More"
         ]);
     }
 
-    public function admin()
-    {
-        return view('home', [
-            "title" => "COURTIFY"
-        ]);
-    }
 }
