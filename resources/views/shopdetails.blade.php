@@ -4,7 +4,7 @@
 
 @section('container')
     <!-- Template Main CSS File -->
-    <link href="assets/css/shopdetails.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/shopdetails.css') }}" rel="stylesheet">
 
     </head>
 
@@ -15,7 +15,7 @@
             @include('partials.banner')
         
             <!-- ======= Portfolio Details Section ======= -->
-            <section id="portfolio-details" class="portfolio-details">
+            <section id="portfolio-details" class="portfolio-details pb-0">
               <div class="container">
         
                 <div class="row gy-4">
@@ -25,15 +25,27 @@
                       <div class="swiper-wrapper align-items-center">
         
                         <div class="swiper-slide">
-                          <img src="images/bad1.jpg" alt="">
+                            @if ($lapangan->thumbnail)
+                            <img src="{{ asset('storage/' . $lapangan->thumbnail)}}" alt="{{ $lapangan->cabor->nama }}">
+                            @else
+                            <img src="{{asset('assets/img/sport.png')}}" alt="{{ $lapangan->cabor->nama }}" >
+                            @endif
                         </div>
         
                         <div class="swiper-slide">
-                          <img src="images/bad2.jpg" alt="">
+                            @if ($lapangan->gambar1)
+                            <img src="{{ asset('storage/' . $lapangan->gambar1)}}" alt="{{ $lapangan->cabor->nama }}">
+                            @else
+                            <img src="{{asset('assets/img/sport.png')}}" alt="{{ $lapangan->cabor->nama }}">
+                            @endif
                         </div>
         
                         <div class="swiper-slide">
-                          <img src="images/bad3.jpg" alt="">
+                            @if ($lapangan->gambar2)
+                            <img src="{{ asset('storage/' . $lapangan->gambar2)}}" alt="{{ $lapangan->cabor->nama }}">
+                            @else
+                            <img src="{{asset('assets/img/sport.png')}}" alt="{{ $lapangan->cabor->nama }}">
+                            @endif
                         </div>
         
                       </div>
@@ -93,13 +105,11 @@
                                 <h2 class="title">{{ $lapangan->nama }}</h2>
                                 <div class="entry-meta">
                                     <ul>
-                                        <li class="d-flex align-items-center"><i class="bi bi-geo-alt"></i><a
-                                                href="blog-single.html">{{ $lapangan->kota }}</a></li>
-                                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a
-                                                href="blog-single.html">Badminton</a></li>
-                                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a
-                                                href="blog-single.html"><time datetime="2020-01-01">Jan 25, 2024</time></a>
+                                        <li class="d-flex align-items-center"><iconify-icon icon="mdi:location"></iconify-icon>&nbsp;&nbsp;Kota Malang</li>
+                                        <li class="d-flex align-items-center"><iconify-icon icon="fluent:sport-16-filled"></iconify-icon>
+                                            <a style="color: #4084FD; font-size: 17" href="/shop?cabor={{ $lapangan->cabor->slug }}">&nbsp;&nbsp;{{ $lapangan->cabor->name }}</a>
                                         </li>
+                                        <li class="d-flex align-items-center"><iconify-icon icon="mdi:clock"></iconify-icon> &nbsp;&nbsp;{{ $lapangan->created_at->diffForHumans() }} </li>
                                     </ul>
                                 </div>
 
@@ -111,7 +121,7 @@
                                         <p>
                                             <span class="h1 fw-bold mb-0" style="font-size: 20px;">Lokasi Venue</span>
                                             <br><br>
-                                            <span class="h1 mb-0" style="font-size: 12px;">{{ $lapangan->alamat }}</span>
+                                            <span class="h1 mb-0" style="font-size: 15px;">{{ $lapangan->alamat }}</span>
                                         </p>
                                     </blockquote>
                                     <br>
@@ -124,7 +134,7 @@
                                                         <!-- First Comment -->
                                                         <div class="comment-card">
                                                             <div class="d-flex flex-start">
-                                                                <img class="rounded-circle shadow-1-strong me-3" src="images/swim1.jpg" alt="avatar" width="50"height="50">
+                                                                <img class="rounded-circle shadow-1-strong me-3" src="{{ asset('images/swim1.jpg') }}" alt="avatar" width="50"height="50">
                                                                 <div class="card w-100">
                                                                     <div class="card-body p-4">
                                                                         <h5>Fatma Yuniardini</h5>
@@ -159,7 +169,7 @@
                                                         <!-- Second Comment -->
                                                         <div class="comment-card">
                                                             <div class="d-flex flex-start">
-                                                                <img class="rounded-circle shadow-1-strong me-3" src="images/swim2.jpg" alt="avatar" width="50" height="50">
+                                                                <img class="rounded-circle shadow-1-strong me-3" src="{{ asset('images/swim2.jpg') }}" alt="avatar" width="50" height="50">
                                                                 <div class="card w-100">
                                                                     <div class="card-body p-4">
                                                                         <h5>Chalista Yulia</h5>
@@ -188,7 +198,7 @@
                                                         <!-- Third Comment -->
                                                         <div class="comment-card">
                                                             <div class="d-flex flex-start">
-                                                                <img class="rounded-circle shadow-1-strong me-3"src="images/swim3.jpg" alt="avatar" width="50" height="50">
+                                                                <img class="rounded-circle shadow-1-strong me-3"src="{{ asset('images/swim3.jpg') }}" alt="avatar" width="50" height="50">
                                                                 <div class="card w-100">
                                                                     <div class="card-body p-4">
                                                                             <h5>Lucyta Qutsyaning</h5>
@@ -221,13 +231,13 @@
                                 </div>
                                 <hr>
                                 <div class="entry-meta">
-                                    <h2 class="title">Rekomendasi Venue</h2>
+                                    <h2 class="title">Rekomendasi Venue Terdekat</h2>
                                     <section id="recent-blog-posts" class="recent-blog-posts">
                                         <div data-aos="fade-up">
                                             <div class="row">
                                                 <div class="col-lg-4">
                                                     <div class="post-box">
-                                                      <div class="post-img"><img src="images/bola1.jpg" class="img-fluid" alt=""></div>
+                                                      <div class="post-img"><img src="{{ asset('images/bola1.jpg') }}" class="img-fluid" alt=""></div>
                                                       <span class="post-date">Futsal</span>
                                                       <h3 class="post-title">SM Futsal</h3>
                                                       <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
@@ -236,7 +246,7 @@
                                         
                                                   <div class="col-lg-4">
                                                     <div class="post-box">
-                                                      <div class="post-img"><img src="images/bola2.jpg" class="img-fluid" alt=""></div>
+                                                      <div class="post-img"><img src="{{ asset('images/bola2.jpg') }}" class="img-fluid" alt=""></div>
                                                       <span class="post-date">Futsal</span>
                                                       <h3 class="post-title">Viva Futsal</h3>
                                                       <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
@@ -245,13 +255,12 @@
                                         
                                                   <div class="col-lg-4">
                                                     <div class="post-box">
-                                                      <div class="post-img"><img src="images/bola3.jpg" class="img-fluid" alt=""></div>
+                                                      <div class="post-img"><img src="{{ asset('images/bola2.jpg') }}" class="img-fluid" alt=""></div>
                                                       <span class="post-date">Futsal</span>
-                                                      <h3 class="post-title">EI-QUDS Futsal</h3>
+                                                      <h3 class="post-title">Viva Futsal</h3>
                                                       <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                                                     </div>
                                                   </div>
-                                            </div>
                                         </div>
                                     </section>
                                 </div>

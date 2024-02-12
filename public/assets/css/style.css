@@ -6,6 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /*--------------------------------------------------------------
 # New
 --------------------------------------------------------------*/
@@ -58,7 +59,6 @@ input {
 # Keranjang
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0;
@@ -153,6 +153,79 @@ input {
         overflow: hidden;
     }
 }
+
+/*--------------------------------------------------------------
+# Ketersediaan
+--------------------------------------------------------------*/
+.inputket {
+  margin-right: 0.5rem;
+}
+
+.buttonket {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #4084fd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /* Add colon here */
+}
+.containerket {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.h1ket {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.time-slot {
+  width: 48%;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.time-slot:hover {
+  background-color: #e6e6e6;
+}
+
+.time-range {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  font-size: 1rem;
+}
+
+.available {
+  color: #4084fd;
+}
+
+.booked {
+  color: red;
+}
+.selected-time-slot {
+  background-color: #4084fd;
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # General

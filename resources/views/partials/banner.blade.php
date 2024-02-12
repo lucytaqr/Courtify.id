@@ -4,7 +4,7 @@
 
       <ol>
         <li><a href="/">Home</a></li>
-        <li>Sewa Lapangan</li>
+        <li>{{ $breadcrumbs }}</li>
       </ol>
       <h2><b>{{ $banner }}</b></h2>
 

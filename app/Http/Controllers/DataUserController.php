@@ -15,7 +15,7 @@ class DataUserController extends Controller
     {
         return view('admin.datauser.index', [
             "title" => "COURTIFY - Dashboard Data User",
-            'datausers' => User::latest()->filter(request(['search']))->paginate(5)
+            'datausers' => User::latest()->whereNot('id', '1')->filter(request(['search']))->paginate(5)
         ]);
     }
 

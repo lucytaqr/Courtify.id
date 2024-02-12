@@ -1,28 +1,17 @@
+<div class="bgprofil">
+
 @extends('layouts.main')
+
+@section('container')
 
 @include('partials.navbar')
 
-@section('container')
-    <!-- Template Main CSS File -->
-    <link href="assets/css/ketersediaan.css" rel="stylesheet">
+@include('partials.bannerxs')
 
     <main id="main">
 
-        <!-- ======= Breadcrumbs ======= -->
-        <section class="breadcrumbs">
-            <div class="container">
-
-                <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li>Detail Lapangan</li>
-                </ol>
-                <h2>Cari tahu lapangan lebih lengkap</h2>
-
-            </div>
-        </section><!-- End Breadcrumbs -->
-
-        <div class="container">
-            <h1>Badminton Rajabasa</h1>
+        <div class="containerket">
+            <h1 class="h1ket">Badminton Rajabasa</h1>
             <form>
                 <div class="form-group">
                     <label for="renter-name">Nama Penyewa</label>
@@ -97,7 +86,7 @@
                     </label>
                 </div> --}}
                 <div class="form-group">
-                    <button type="submit">Check Availability</button>
+                    <button class="buttonket" type="submit">Check Availability</button>
                 </div>
             </form>
         </div>
@@ -112,4 +101,6 @@
                 });
             });
         </script>
+    </main>
+</div>
     @endsection

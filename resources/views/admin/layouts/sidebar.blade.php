@@ -37,7 +37,7 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="/admin/lapangan" class="{{ Request::is('admin/lapangan') ? 'active' : '' }}">
+            <a href="/admin/lapangans" class="{{ Request::is('admin/lapangan*') ? 'active' : '' }}">
               <i class="bi bi-circle"></i><span>Lapangan</span>
             </a>
           </li>

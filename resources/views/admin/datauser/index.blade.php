@@ -52,7 +52,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  @foreach ($datausers->skip(1) as $datauser)
+                  @foreach ($datausers as $datauser)
                   <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $datauser->name }}</td>

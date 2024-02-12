@@ -13,12 +13,13 @@ return new class extends Migration
     {
         Schema::create('lapangans', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('cabor_id');
             $table->string('nama');
-            // $table->string('jenis');
-            // $table->string('cabor');
+            $table->string('slug')->unique();
+            $table->string('thumbnail')->nullable();
+            $table->string('gambar1')->nullable();
+            $table->string('gambar2')->nullable();
             $table->string('tarif');
-            $table->string('kota');
-            $table->string('provinsi');
             $table->string('alamat');
             $table->text('deskripsi');
             $table->string('wifi')->nullable();
