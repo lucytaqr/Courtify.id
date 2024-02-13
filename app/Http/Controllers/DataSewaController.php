@@ -6,16 +6,15 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class DataUserController extends Controller
+class DataSewaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('admin.datauser.index', [
-            "title" => "COURTIFY - Dashboard Data User",
-            'datausers' => User::latest()->whereNot('id', '1')->filter(request(['search']))->paginate(5)
+        return view('admin.datasewa.index', [
+            "title" => "COURTIFY - Dashboard Data Penyewaan",
         ]);
     }
 

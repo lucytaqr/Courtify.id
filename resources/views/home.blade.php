@@ -4,6 +4,8 @@
 
 @include('partials.navbar')
 
+<main id="main">
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
 
@@ -24,44 +26,11 @@
           </div>
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          {{-- <img src="assets/img/awal3.jpg"  width="900" height="850" class="img-fluid" alt=""> --}}
         </div>
       </div>
     </div>
 
   </section><!-- End Hero -->
-
-  <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>Untuk apa Courtify?</h3>
-              <h2>Sewa lapangan dengan mudah dan praktis</h2>
-              <p>
-                Temukan lapangan olahraga impian Anda dengan mudah di sini! Dengan antarmuka yang sederhana dan sistem pemesanan yang cepat, Anda bisa menemukan lapangan yang tepat sesuai kebutuhan Anda.
-            </p>
-              <div class="text-center text-lg-start">
-                <a href="/learnmore" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Selengkapnya</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/awal.jpg" width="580" height="500" class="img-fluid" alt="">
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- End About Section -->
 
     <!-- ======= Values Section ======= -->
     <section id="values" class="values">
@@ -105,6 +74,37 @@
 
     </section>
     <!-- End Values Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Untuk apa Courtify?</h3>
+              <h2>Sewa lapangan dengan mudah dan praktis</h2>
+              <p>
+                Temukan lapangan olahraga impian Anda dengan mudah di sini! Dengan antarmuka yang sederhana dan sistem pemesanan yang cepat, Anda bisa menemukan lapangan yang tepat sesuai kebutuhan Anda.
+            </p>
+              <div class="text-center text-lg-start">
+                <a href="/learnmore" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Selengkapnya</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/awal.jpg" width="580" height="500" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
 
     <!-- ======= Counts Section ======= -->
     {{-- <section id="counts" class="counts">
@@ -385,7 +385,7 @@
               <img src="assets/img/soccer.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Futsal</h3>
               <p>Nikmati aksi cepat dan teknis di lapangan futsal kami yang nyaman. Sempurna untuk pertandingan antar teman atau latihan intens.</p>
-              <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="/shop?cabor=futsal" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -394,7 +394,7 @@
               <img src="assets/img/basketball.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Basket</h3>
               <p>Dapatkan kesempatan untuk mempertajam keterampilan bola basket Anda di lapangan kami yang luas. Sempurna untuk pertandingan seru atau latihan bersama tim.</p>
-              <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="/shop?cabor=basket" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -403,7 +403,7 @@
               <img src="assets/img/volley.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Voli</h3>
               <p>Rasakan semangat kompetisi dan kerjasama di lapangan voli kami yang lapang. Cocok untuk pertandingan santai atau turnamen yang penuh semangat.</p>
-              <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="/shop?cabor=voli" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -412,7 +412,7 @@
               <img src="assets/img/badminton.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Badminton</h3>
               <p>Bermainlah dengan lincah dan fleksibel di lapangan badminton kami yang nyaman. Tersedia untuk pertandingan seru atau latihan individu.</p>
-              <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="/shop?cabor=badminton" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -421,7 +421,7 @@
               <img src="assets/img/golf.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Golf</h3>
               <p>Rasakan keindahan alam dan ketegangan permainan golf di lapangan kami yang terawat dengan baik. Sempurna untuk putaran santai atau kompetisi serius.</p>
-              <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="/shop?cabor=golf" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -430,7 +430,7 @@
               <img src="assets/img/tennis.png"  width="250" height="250" class="img-fluid" alt="">
               <h3>Tennis</h3>
               <p>Hadapi lawan Anda dengan energi penuh di lapangan tenis kami yang terawat. Cocok untuk pertandingan ganda atau latihan pribadi.</p>
-              <a href="#" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="/shop?cabor=tennis" class="read-more"><span>Sewa Lapangan</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -631,161 +631,6 @@
       </div>
 
     </section><!-- End F.A.Q Section --> --}}
-
-    <!-- ======= Portfolio Section ======= -->
-    {{-- <section id="portfolio" class="portfolio">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Portfolio</h2>
-          <p>Check our latest work</p>
-        </header>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Portfolio Section --> --}}
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -1049,93 +894,7 @@
 
     </section><!-- End Recent Blog Posts Section --> --}}
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Contact</h2>
-          <p>Contact Kami</p>
-        </header>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Alamat</h3>
-                  <p>JL. Wahid Hasyim No. 10D,<br>Jakarta Pusat, Indonesia 10340</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Telephone</h3>
-                  <p>+62878-8552-5300</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Kami</h3>
-                  <p>Courtify@gmail.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-instagram"></i>
-                  <h3>Instagram Kami</h3>
-                  <p>Courtify.id</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Pesanmu sudah terkirim. Terima Kasih!</div>
-
-                  <button type="submit">Kirim Pesan</button>
-                </div>
-
-              </div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Contact Section -->
-
   </main><!-- End #main -->
 
-  @include ('partials.mainfooter')
+  @include ('partials.footer')
   @endsection

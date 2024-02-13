@@ -18,20 +18,32 @@
         </ol>
       </nav>
     </div><!-- End Page Title -->
-
+    
     <!-- ======= Search ======= -->
-    <div class="input-group mt-3 mb-3" style="width: 25%">
-      <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-    </div>
-    <!-- End Search -->
+    <div class="col-md-6 d-">
+      <form action="/admin/lapangans">
+          <div class="input-group mt-3 mb-3">
+              <input type="text" class="form-control" placeholder="Search" name="search" value="{{ request('search') }}">
+              <button class="btn btn-primary" type="submit">Search</button>
+          </div>
+      </form>
+
+      @if(session()->has('success'))
+        <div class="alert alert-success" role="alert">
+          {{ session('success')}}
+        </div>
+      @endif
+
+      <a href="/admin/lapangans/create" class="btn btn-primary mb-3 flex justify-content-end">Tambah Data</a>
+  </div>
+  <!-- End Search -->
 
     <section class="section">
       <div class="row">
         <div class="col-lg-12">
-
           <div class="card">
             <div class="card-body">
-
+              
               <!-- Table with stripped rows -->
               <table class="table datatable" style="text-align: center">
                 <thead>
@@ -39,22 +51,38 @@
                     <th>
                       <b>N</b>o
                     </th>
+                    <th>Thumbnail</th>
                     <th>Nama Lapangan</th>
                     <th>Cabor</th>
-                    <th>Wilayah</th>
-                    <th>Harga</th>
+                    <th>Tarif / Jam</th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
+                  @foreach ($lapangans as $lapangan)
                   <tr>
-                    <td>1</td>
-                    <td>Unity Pugh</td>
-                    <td>9958</td>
-                    <td>Curicó</td>
-                    <td>2005/02/11</td>
-                    <td>37%</td>
+                    <td>{{ $loop->iteration }}</td>
+                    <td>
+                      @if ($lapangan->thumbnail)
+                            <img src="{{ asset('storage/' . $lapangan->thumbnail)}}" alt="{{ $lapangan->cabor->nama }}" style="width: 100px">
+                            @else
+                            <img src="{{asset('assets/img/sport.png')}}" alt="{{ $lapangan->cabor->nama }}" style="width: 100px" >
+                            @endif
+                    </td>
+                    <td>{{ $lapangan->nama}}</td>
+                    <td>{{ $lapangan->cabor->name}}</td>
+                    <td>{{ $lapangan->tarif}}</td>
+                    <td>
+                      <a href="/admin/lapangans/{{ $lapangan->slug }}" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                      <a href="/admin/lapangans/{{ $lapangan->slug }}/edit" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
+                      <form action="/admin/lapangans/{{ $lapangan->slug }}" method="POST" class="d-inline">
+                        @csrf
+                        @method('delete')
+                        <button class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')"><i class="bi bi-trash"></i></button>
+                      </form>
+                    </td>
                   </tr>
+                  @endforeach
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
@@ -64,25 +92,9 @@
 
         </div>
         
-        <!-- Pagination -->
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- End Pagination -->
+        <div class="d-flex justify-content-center">
+          {{ $lapangans->links() }}
+      </div>
         
       </div>
     </section>

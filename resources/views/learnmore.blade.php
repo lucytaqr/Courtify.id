@@ -10,7 +10,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Website Sewa Lapangan Nomor1 <iconify-icon icon="ph:medal-bold" style="color: #ffc700;" width="60"></iconify-icon> <br> di Kota Malang </h1>
+          <h1 data-aos="fade-up">Website Sewa Lapangan No 1 <iconify-icon icon="ph:medal-bold" style="color: #ffc700;" width="60"></iconify-icon> <br> di Kota Malang </h1>
           <h2 data-aos="fade-up" data-aos-delay="600">
             <p>Mengelola penyewaan lapangan olahraga <br> dengan praktis yang dapat terhubung dengan <br> banyak pengguna</p>
             </h2>
@@ -22,9 +22,6 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <img src="assets/img/learnmore.png"  width="500" class="img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -141,8 +138,8 @@
           <div class="col-lg-4">
             <div class="post-box">
               <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
-              <span class="post-date">Tue, September 15</span>
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
+              <span class="post-date">Badminton</span>
+              <h3 class="post-title">Lapangan Sudimoro</h3>
               <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -171,5 +168,5 @@
 
   </main><!-- End #main -->
 
-  @include ('partials.mainfooter')
+  @include ('partials.footer')
   @endsection
